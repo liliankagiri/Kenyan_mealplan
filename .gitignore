@@ -1,0 +1,4 @@
+# python gitignore
+*.pyc
+*.pyo
+model/response/*
