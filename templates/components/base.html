@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>{% block title %}Meal plan app{% endblock %}</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}" />
+    {% block styles %}{% endblock %}
+</head>
+
+<body>
+    <header>
+        <h1>Meal plan app</h1>
+    </header>
+
+    <main>{% block content %}{% endblock %}</main>
+
+    <!-- <footer>
+        <p>Copyright 2024</p>
+    </footer> -->
+
+    {% block scripts %}{% endblock %}
+</body>
+
+</html>
