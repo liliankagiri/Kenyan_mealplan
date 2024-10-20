@@ -11,6 +11,7 @@ def main():
     
     # Ask the AI for a meal plan
     response = ask(ingredients, config)
+    
     print("Generated Meal Plan:", response)
 
 if __name__ == "__main__":

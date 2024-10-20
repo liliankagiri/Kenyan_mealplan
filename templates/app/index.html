@@ -1,0 +1,22 @@
+{% extends 'components/base.html' %} {% block title %}Meal plan app{% endblock %} 
+{% block content %}
+
+<form id="mealForm">
+  <label for="ingredients">Enter Ingredients (comma-separated):</label><br />
+  <input
+    type="text"
+    id="ingredients"
+    name="ingredients"
+    placeholder="e.g., beef, potatoes, broccoli"
+  /><br />
+  <button type="submit">Generate Meal Plan</button>
+</form>
+
+<div id="mealPlanResults">
+  <!-- The meal plans will be displayed here -->
+</div>
+{% endblock %}
+
+{% block scripts %}
+<script src="{{ url_for('static', filename='request.js') }}"></script>
+{% endblock %}

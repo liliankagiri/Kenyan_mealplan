@@ -1,4 +1,60 @@
-# python gitignore
+# Python gitignore
 *.pyc
 *.pyo
-model/response/*
+__pycache__/
+*.pyd
+*.pdb
+*.egg
+*.egg-info/
+dist/
+build/
+*.so
+
+# Virtual environment
+venv/
+env/
+ENV/
+.venv/
+.ENV/
+
+# Flask specific
+instance/
+*.log
+
+# Jupyter Notebook
+.ipynb_checkpoints
+
+# VS Code
+.vscode/
+
+# PyCharm
+.idea/
+
+# macOS
+.DS_Store
+
+# Linux
+*.swp
+
+# Coverage reports
+htmlcov/
+.coverage
+.coverage.*
+.cache
+nosetests.xml
+coverage.xml
+*.cover
+.hypothesis/
+
+# Test and debug outputs
+.tox/
+.pytest_cache/
+debug.log
+
+# Local environment variables
+.env
+.env.*
+
+
+# response dir
+model/response
